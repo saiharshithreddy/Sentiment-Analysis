@@ -38,9 +38,10 @@ def expand_contractions(text):
 #Function for removing the stopwords
 
 stopword_list = nltk.corpus.stopwords.words('english')
+print(stopword_list)
 
 def remove_stopwords(text):
-    filtered_words = [word for word in nltk.word_tokenize(text) if word not in stopword_list and word.isalpha()]
+    filtered_words = [word for word in nltk.word_tokenize(text) if word not in stopword_list and word != 'not' and word.isalpha()]
     filtered_text = ' '.join(filtered_words)    
     return filtered_text
 
