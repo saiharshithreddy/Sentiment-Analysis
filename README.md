@@ -1,14 +1,30 @@
 # Sentiment-Analysis
+## Goal
+The project is aimed at solving the problem of finding the sentiment of the user reviews on yelp.com
 
-Yelp dataset: https://drive.google.com/open?id=1CroF43Yasx_14nW2u6jABI3pK01_Y5gr  
+## Installation
+Libraries need to run the code: ```pandas```, ```numpy```, ```pytorch``` libraries 
+```python
+pip3 install -r requriements.txt
+```
+[Download](https://www.yelp.com/dataset) the Yelp dataset:  
 
-No of reviews: 6.6M
+## Algorithms
+1. Support Vector Machine
+2. Naive Bayes
+3. RCNN model
 
-## Data preprocessing
+## Steps involved
+**Data preprocessing**
 1. Remove stop words
 2. Stemming/Lemmetization
 3. Uppercase to Lowercase
-4. Removing any bad characters like \n, \t, $ etc using regex.
+4. Removing any bad characters like \n, \t, $ etc using regex.  
+Check my [blog] on text preprocessing.
 
-As the data size is large it would be slow to run on a cpu with low specs. GPU is highly recommended (cloud). 
+## Evaluation
+Due to an imbalance classes, F1 score was metric was used.
+
+
+
 
